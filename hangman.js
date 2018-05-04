@@ -8,12 +8,14 @@ Hangman.prototype.getPuzzel = function(){
     let puzzel = '';
 
     this.word.forEach((letter) => {
-        if(this.gussedLetters.includes(letter) || letter === ' ')
-        {
-             puzzel +=  letter
-        } else {
-            puzzel +=  '*';
-        }
+
+             puzzel = (this.gussedLetters.incliudes(letter) || letter === ' ') ? (puzzel += letter ): (puzzel += '*')
+        // if(this.gussedLetters.includes(letter) || letter === ' ')
+        // {
+        //      puzzel +=  letter
+        // } else {
+        //     puzzel +=  '*';
+        // }
     })
     return puzzel;
 }
