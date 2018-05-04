@@ -9,7 +9,7 @@ Hangman.prototype.getPuzzel = function(){
 
     this.word.forEach((letter) => {
 
-             puzzel = (this.gussedLetters.incliudes(letter) || letter === ' ') ? (puzzel += letter ): (puzzel += '*')
+             puzzel = (this.gussedLetters.includes(letter) || letter === ' ') ? (puzzel += letter ): (puzzel += '*')
         // if(this.gussedLetters.includes(letter) || letter === ' ')
         // {
         //      puzzel +=  letter
