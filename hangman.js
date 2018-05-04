@@ -1,7 +1,7 @@
 const Hangman = function(word  = [], guesses){
     this.word = word.toLowerCase().split('');
     this.guesses = guesses;
-    this.gussedLetters = ['c'];
+    this.gussedLetters = ['c','e'];
 }
 
 Hangman.prototype.getPuzzel = function(){
